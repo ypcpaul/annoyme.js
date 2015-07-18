@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Annoy me!",
-    "description": "Harmless browser pranks for your and your friends",
+    "description": "Harmless browser pranks for you and your friends",
     "version": "1.0",
     
     "content_scripts": [
