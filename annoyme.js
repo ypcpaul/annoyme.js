@@ -18,12 +18,8 @@ class Annoyance {
             console.log("I run like the wind.");
     }
     
-    shouldIRun() {
-        var should = false;
-        var rand = Math.random();
-        if(rand <= this.chanceLevel)
-            should = true;
-        return should;
+    shouldIRun() {        
+        return (Math.random() <= this.chanceLevel);
     }
 }
 
