@@ -4,10 +4,19 @@
     "description": "Harmless browser pranks for your and your friends",
     "version": "1.0",
     
+    "permissions": [
+        "storage"
+    ],
+    
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["/jquery.min.js", "/annoyme.js"]
         }
-    ]
+    ],
+    
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    }
 }
