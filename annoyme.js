@@ -30,6 +30,11 @@ class RickRoll extends Annoyance {
             if(self.shouldIRun())
                 $(this).attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         });
+		
+		$("img").each(function(){
+			if(self.shouldIRun())
+				$(this).attr("src", "http://media.giphy.com/media/MfIGtdhq6Q9aM/giphy.gif");
+		});
     }
 }    
 
