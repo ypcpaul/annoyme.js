@@ -31,10 +31,20 @@ class RickRoll extends Annoyance {
                 $(this).attr("href", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         });
     }
+}
+
+class TrollRoll extends Annoyance {
+	run() {
+		var self = this;
+		if(self.shouldIRun())
+			$("img").each(function(){
+				$(this).attr("src", "http://media.giphy.com/media/MfIGtdhq6Q9aM/giphy.gif");
+			});
+	}
 }    
 
 $(document).ready(function(){
-    var annoyances = [new RickRoll(CHANCE.LOW)];
+    var annoyances = [new RickRoll(CHANCE.LOW), new TrollRoll(CHANCE.LOW)];
     annoyances.forEach(function(current){
         if(current instanceof Annoyance) {
             current.run();
