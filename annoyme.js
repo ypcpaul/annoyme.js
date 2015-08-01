@@ -36,10 +36,11 @@ class RickRoll extends Annoyance {
 class TrollRoll extends Annoyance {
     run() {
         var self = this;
-        if(self.shouldIRun())
-            $("img").each(function(){
+        $("img").each(function(){
+            if(self.shouldIRun()) {
                 $(this).attr("src", "http://media.giphy.com/media/MfIGtdhq6Q9aM/giphy.gif");
-            });
+            }
+        });           
     }
 }    
 
